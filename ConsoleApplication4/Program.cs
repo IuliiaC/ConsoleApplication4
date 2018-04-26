@@ -23,9 +23,9 @@ namespace ConsoleApplication4
                 Console.WriteLine("Какой вы молодец! Вы попали в допустимые границы");
                 if (isSpecalNumber(num))
                 {
-                    Console.WriteLine("К тому же ещё и в спец число " + num + "!");
+                    Console.WriteLine("К тому же ещё в спец число " + num + "!");
                 }
-                else if (isEvenNumber(num))
+                if (isEvenNumber(num))
 
                 {
                     Console.WriteLine("И это парное число");
