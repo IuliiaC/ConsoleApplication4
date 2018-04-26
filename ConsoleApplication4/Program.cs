@@ -18,25 +18,20 @@ namespace ConsoleApplication4
                 Console.WriteLine("Но-но! Это число лежит за пределами границ");
             }
 
-            else if (isSpecalNumber(num))
-            {
-                Console.WriteLine("Какой вы молодец! Вы попали в допустимые границы");
-                Console.WriteLine("К тому же ещё и в спец число " + num + "!");
-            }
-            else if (isEvenNumber(num))
-
-            {
-                Console.WriteLine("Какой вы молодец! Вы попали в допустимые границы");
-                Console.WriteLine("И это парное число");
-             }
-
             else
             {
                 Console.WriteLine("Какой вы молодец! Вы попали в допустимые границы");
+                if (isSpecalNumber(num))
+                {
+                    Console.WriteLine("К тому же ещё и в спец число " + num + "!");
+                }
+                else if (isEvenNumber(num))
+
+                {
+                    Console.WriteLine("И это парное число");
+                }
             }
-
-            Console.ReadLine();
-
+             Console.ReadLine();
         }
         static bool isSpecalNumber(int numa)
         {
