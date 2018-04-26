@@ -15,17 +15,19 @@ namespace ConsoleApplication4
 
             if (num > 100 || num < 0)
             {
-                Console.WriteLine("Но-но! Это число лежит за пределами границы");
+                Console.WriteLine("Но-но! Это число лежит за пределами границ");
             }
 
             else if (isSpecalNumber(num))
             {
-                Console.WriteLine("Ты попал в спец число" + num + "!");
+                Console.WriteLine("Какой вы молодец! Вы попали в допустимые границы");
+                Console.WriteLine("К тому же ещё и в спец число " + num + "!");
             }
             else if (isEvenNumber(num))
 
             {
-                Console.WriteLine("Это парное число");
+                Console.WriteLine("Какой вы молодец! Вы попали в допустимые границы");
+                Console.WriteLine("И это парное число");
              }
 
             else
@@ -38,7 +40,6 @@ namespace ConsoleApplication4
         }
         static bool isSpecalNumber(int numa)
         {
-        numa = 0;
         switch (numa)
                 {
                 case 11:
